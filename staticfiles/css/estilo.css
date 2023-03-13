@@ -1,0 +1,14 @@
+main > .container {
+    padding: 60px 15px 0;
+    
+}
+
+.btn-index{
+    z-index: 2000;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #eb0606;
+    border-color: #2f2f30;
+}
