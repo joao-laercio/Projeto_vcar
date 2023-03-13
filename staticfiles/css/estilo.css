@@ -7,8 +7,10 @@ main > .container {
     z-index: 2000;
 }
 
-.btn-primary {
+.btn btn-primary mt-4 {
     color: #fff;
     background-color: #eb0606;
-    border-color: #2f2f30;
+    border-color: #1a1717;
+
+
 }

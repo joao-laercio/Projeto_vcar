@@ -57,9 +57,10 @@
               <a class="nav-link" href="{% url 'listar_alugueis' %}">Alugueis</a>
             </li>
           </ul>
-          <form class="d-flex" role="search" method="get" action="{% url 'index' %}">
+          <form class="d-flex" role="search" style="background-color: blue;" method="get" action="{% url 'index' %}">
             <input class="form-control me-2" name="q" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            <button class="btn btn-outline-success" type="submit" style="color:rgb(255, 255, 255)
+            ">Pesquisar</button>
           </form>
         </div>
       </div>
@@ -106,7 +107,7 @@
             </div>
           </div>
         </div>
-        <a href="{% url 'realizar_aluguel_carro' carro.pk %}" class="btn btn-primary mt-4" >Alugue!</a>
+        <a href="{% url 'realizar_aluguel_carro' carro.pk %}" class="btn btn-primary mt-4" style="background-color: rgb(255, 4, 4); border-color: red;">Alugue</a>
         {% endfor %}
       </div>
 
