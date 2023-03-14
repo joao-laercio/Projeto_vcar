@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Carro, Aluguel
+from .models import Carro, Aluguel, Cliente
 from .forms import AluguelForm
 
 # Create your views here.
@@ -11,6 +11,14 @@ def index(request):
 def listar_carros(request):
     carros = Carro.objects.all()
     return render(request, 'carro/listar.html', {"carros":carros})
+
+def listar_clientes(request):
+    clientes = Cliente.objects.all()
+    return render(request, 'cliente/listar.html', {"clientes":clientes})
+
+def detalhar_cliente(request, pk):
+    cliente = Cliente.objects.get(pk=pk)
+    return render(request, 'cliente/detalhar.html', {"cliente":cliente})
     
 def listar_alugueis(request):
     alugueis = Aluguel.objects.all()
